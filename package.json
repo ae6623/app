@@ -1,7 +1,7 @@
 {
-  "name": "05-01",
+  "name": "App",
   "version": "1.0.0",
-  "description": "",
+  "description": "App for activity",
   "main": "index.js",
   "scripts": {
     "build": "export NODE_ENV=production && webpack",
@@ -11,7 +11,7 @@
     "hot": "webpack-dev-server --colors --inline --hot",
     "dev": "webpack-dev-server -port 9001 --devtool eval --progress --hot --colors --contentbase build"
   },
-  "author": "lzy",
+  "author": "luoyu.lzy",
   "license": "MIT",
   "dependencies": {
     "babel-core": "^6.25.0",

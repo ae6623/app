@@ -1,0 +1,481 @@
+body {
+    background: #f8f8f8;
+}
+a {
+    color: #333;
+}
+.whitebg {
+    background: #fff;
+}
+.margintop1 {
+    margin-top: 1rem;
+}
+.title {
+    padding: 1rem;
+    position: relative;
+}
+.title:before {
+    content: '.';
+    color: transparent;
+    width: 5px;
+    height: 1.5rem;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background: #8bc53f;
+}
+.title span {
+    display: block;
+    color: #8bc53f;
+    font-size: 1.4rem;
+    font-weight: bold;
+    height: 2rem;
+    line-height: 2rem;
+}
+.textellipsis {
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4rem;
+    line-height: 4rem;
+    background: rgba(0,0,0,.7);
+    display: flex;
+    z-index: 99;
+    color: #ffffff;
+}
+#header > div {
+    padding: 0 .5rem;
+    overflow: hidden;
+}
+#header > div a {
+    color: #ffffff;
+}
+#header .topleft {
+    flex: 2;
+}
+#header .topleft .city {
+    float: left;
+    padding-right: 1.5rem;
+    background: url("../images/wbtn_down.png") right center no-repeat;
+    background-size: 1rem;
+    height: 4rem;
+}
+#header .topcenter {
+    flex: 4;
+    text-align: center;
+}
+#header .topcenter img {
+    display: inline-block;
+    vertical-align: middle;
+    height: 2rem;
+    width: auto;
+}
+#header .topcenter a {
+    display: block;
+    height: 100%;
+    background: url("../images/logo.png") center no-repeat;
+    background-size: auto 2rem;
+}
+#header .topright {
+    flex: 2;
+}
+#header .topright .personal {
+    float: right;
+    width: 4rem;
+    padding: .8rem;
+}
+
+#banner {
+    position: relative;
+}
+#banner .swiper-container .swiper-pagination {
+    margin-bottom: 1.5rem;
+}
+#banner .swiper-container .swiper-pagination .custom-bullet {
+    display: inline-block;
+    border-radius: 100%;
+    border: 1px solid #ffa541;
+    background: #fff;
+    width: 10px;
+    height: 10px;
+    margin: 0 4px;
+    opacity: 0.6;
+}
+#banner .swiper-container .swiper-pagination .custom-bullet.swiper-pagination-bullet-active {
+    background: #8bc53f;
+    opacity: 1;
+}
+#banner .search_box {
+    position: absolute;
+    width: 75%;
+    height: 4rem;
+    bottom: -2rem;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    margin: auto;
+    border-radius: 2rem;
+    box-shadow: 3px 3px 5px #bbb;
+}
+#banner .search_box input {
+    height: 100%;
+    width: 100%;
+    padding: 0 1rem;
+    border: 2px solid #8bc53f;
+    border-radius: 2rem;
+    text-align: center;
+    outline: none;
+    font-size: 1.5rem;
+    color: #333;
+    background: #fff;
+}
+#banner .search_box:after {
+    content: '.';
+    color: transparent;
+    width: 2.2rem;
+    height: 2.2rem;
+    position: absolute;
+    top: 50%;
+    right: 1.8rem;
+    transform: translateY(-50%);
+    background: url(../images/search_index.png) center no-repeat;
+    background-size: 100%;
+}
+
+#nav_box {
+    padding: 4rem 0 2rem;
+}
+#nav_box .nav_list {
+    overflow: hidden;
+    padding: 0 1rem;
+}
+#nav_box .nav_list li {
+    float: left;
+    width: 20%;
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+#nav_box .nav_list li span {
+    display: block;
+    font-size: 1.2rem;
+    height: 2.6rem;
+    line-height: 2.6rem;
+    overflow: hidden;
+}
+#nav_box .nav_btn {
+    display: flex;
+    padding: 0 .5rem;
+}
+#nav_box .nav_btn a {
+    flex: 1;
+    margin: 0 .5rem;
+    padding: 0 1rem 0 3rem;
+    text-align: center;
+    color: #fff;
+    height: 4rem;
+    line-height: 4rem;
+    overflow: hidden;
+    border-radius: 5px;
+    background-size: 2rem;
+    background-repeat: no-repeat;
+    background-position: 1rem center;
+    font-size: 1.2rem;
+}
+#nav_box .nav_btn a.navbtn1 {
+    border: 1px solid #558d12;
+    background-color: #8bc43f;
+    background-image: url("../images/navbtn1.png");
+}
+#nav_box .nav_btn a.navbtn2 {
+    border: 1px solid #ef972b;
+    background-color: #ffbf67;
+    background-image: url("../images/navbtn2.png");
+}
+#nav_box .nav_btn a.navbtn3 {
+    border: 1px solid #dc6d64;
+    background-color: #ffa897;
+    background-image: url("../images/navbtn3.png");
+}
+
+#hottopic {
+    padding-bottom: .5rem;
+}
+#hottopic .topic_list_container {
+    padding: 0 1rem;
+}
+#hottopic .topic_list_container .topic_list {
+    overflow: hidden;
+}
+#hottopic .topic_list_container .topic_list .swiper-wrapper .swiper-slide {
+    width: 27%;
+    margin-right: 1rem;
+}
+#hottopic .topic_list_container .topic_list .swiper-wrapper .swiper-slide:last-child {
+    margin-right: 0;
+}
+#hottopic .topic_list_container .topic_list .swiper-wrapper .swiper-slide span {
+    display: block;
+    font-size: 1.3rem;
+    text-align: center;
+    height: 3rem;
+    line-height: 3rem;
+    overflow: hidden;
+}
+
+#age_box .age_list {
+    overflow: hidden;
+    padding: 0 1rem;
+}
+#age_box .age_list li {
+    float: left;
+    width: 20%;
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+#age_box .age_list li span {
+    display: block;
+    font-size: 1.2rem;
+    height: 2.6rem;
+    line-height: 2.6rem;
+    overflow: hidden;
+}
+
+#nearbyact .near_position {
+    padding: 0 1rem;
+    background: #f8f8f8;
+    margin-bottom: 1.5rem;
+    line-height: 3rem;
+}
+#nearbyact .near_position .position {
+    font-size: 1.3rem;
+    padding-left: 1.2rem;
+    position: relative;
+}
+#nearbyact .near_position .position:before {
+    content: '.';
+    color: transparent;
+    width: .8rem;
+    height: 1.2rem;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background: url(../images/position.png) center no-repeat;
+    background-size: 100%;
+}
+#nearbyact .near_position .refresh {
+    float: right;
+    width: 2rem;
+    height: 2rem;
+    margin-top: .5rem;
+    background: url(../images/refresh.png) center no-repeat;
+    background-size: 80%;
+}
+#nearbyact .nearbyact_list {
+    overflow: hidden;
+    padding: 0 .5rem;
+}
+#nearbyact .nearbyact_list li {
+    float: left;
+    width: 50%;
+    padding: 0 .5rem;
+    margin-bottom: 1rem;
+}
+#nearbyact .nearbyact_list li .proimg {
+    position: relative;
+}
+#nearbyact .nearbyact_list li .proimg p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2rem;
+    line-height: 2rem;
+    background: rgba(0,0,0,.8);
+    overflow: hidden;
+    color: #fff;
+    margin: 0;
+    font-size: 1rem;
+}
+#nearbyact .nearbyact_list li .proimg p i {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -2px;
+    width: 1.7rem;
+    padding: .5rem;
+}
+#nearbyact .nearbyact_list li .proinfo {
+}
+#nearbyact .nearbyact_list li .proinfo .proname {
+    font-size: 1.3rem;
+    line-height: 2;
+}
+#nearbyact .nearbyact_list li .proinfo .price_tags {
+}
+#nearbyact .nearbyact_list li .proinfo .price_tags .price {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1rem;
+}
+#nearbyact .nearbyact_list li .proinfo .price_tags .price i {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -.5rem;
+    font-style: normal;
+    font-size: .9rem;
+}
+#nearbyact .nearbyact_list li .proinfo .price_tags .price strong {
+    font-size: 1.4rem;
+    color: #f75934;
+}
+#nearbyact .nearbyact_list li .proinfo .price_tags .tag {
+    font-size: 1rem;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.5;
+    border: 1px solid #8bc53f;
+    color: #8bc53f;
+    margin-right: 10px;
+    padding: 0 .5rem;
+}
+#nearbyact .nearbymore {
+    padding: 1rem 0 2rem;
+    text-align: center;
+}
+#nearbyact .nearbymore a {
+    display: inline-block;
+    padding: 0 1rem;
+    font-size: 1.2rem;
+    line-height: 2;
+    background: #8bc53f;
+    color: white;
+    border-radius: 3px;
+}
+
+#recommend .recommend_list {
+    padding: 0 1rem;
+    margin-top: -1.5rem;
+}
+#recommend .recommend_list li {
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #eeeeee;
+}
+#recommend .recommend_list li .proimg {
+    position: relative;
+}
+#recommend .recommend_list li .proimg .price_tag_tuan {
+    position: absolute;
+    bottom: 2rem;
+    left: 0;
+    text-align: center;
+}
+#recommend .recommend_list li .proimg .price_tag_tuan > div {
+    padding: 0 .6rem;
+}
+#recommend .recommend_list li .proimg .price_tag_tuan .tag_price {
+    color: #fff;
+    background: #ff931b;
+    font-size: 1rem;
+    padding-top: .2rem;
+    padding-bottom: .2rem;
+}
+#recommend .recommend_list li .proimg .price_tag_tuan .tag_price i {
+    font-style: normal;
+    display: inline-block;
+}
+#recommend .recommend_list li .proimg .price_tag_tuan .tag_price i.yen {
+    vertical-align: top;
+}
+#recommend .recommend_list li .proimg .price_tag_tuan .tag_price i.num {
+    font-size: 2rem;
+}
+#recommend .recommend_list li .proimg .price_tag_tuan .tag_price i.dw {
+    vertical-align: bottom;
+}
+#recommend .recommend_list li .proimg .price_tag_tuan .tag_price i.oldprice {
+    text-decoration: line-through;
+}
+#recommend .recommend_list li .proimg .price_tag_tuan .tag_tag {
+    color: #fff;
+    background: #8bc53f;
+    font-size: 1rem;
+    line-height: 1.7;
+    font-weight: bold;
+}
+#recommend .recommend_list li .proimg .price_tag_tuan .tag_tuan {
+    color: #ff931b;
+    background: #fff;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+#recommend .recommend_list li .proimg .joinnum {
+    position: absolute;
+    right: 0;
+    top: 3rem;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    border-bottom-left-radius:1rem;
+    border-top-left-radius: 1rem;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 0 1rem 0 1.5rem;
+}
+#recommend .recommend_list li .proinfo {
+
+}
+#recommend .recommend_list li .proinfo .proname {
+    font-size: 1.7rem;
+    padding-top: .5rem;
+    font-weight: bold;
+}
+#recommend .recommend_list li .proinfo .prosummarye {
+    font-size: 1.3rem;
+    color: #999999;
+    padding-top: .3rem;
+}
+#recommend .recommend_list li .proinfo .price_tags {
+    padding-top: .3rem;
+}
+#recommend .recommend_list li .proinfo .price_tags span {
+    font-size: 1.2rem;
+    display: inline-block;
+    line-height: 1.5;
+    border: 1px solid #8bc53f;
+    border-radius: 3px;
+    color: #8bc53f;
+    margin-right: 10px;
+    padding: 0 .5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <title>app fro activity</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href="https://cdn.bootcss.com/minireset.css/0.0.2/minireset.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/Swiper/4.0.7/css/swiper.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/mui/3.7.1/css/mui.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script> 
+    <script src="https://cdn.bootcss.com/Swiper/4.0.7/js/swiper.min.js"></script>
+    <link href="https://cdn.bootcss.com/mui/3.7.1/css/mui.min.css" rel="stylesheet">
+</head>
+<body>
+<div id="header">
+    <div class="topleft">
+        <a class="city">北京</a>
+    </div>
+    <div class="topcenter">
+        App For Activity
+    </div>
+    <div class="topright">
+        <a class="personal"><img src="images/personal.png"></a>
+    </div>
+</div>
+
+<div id="banner">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/b1.jpg"></div>
+            <div class="swiper-slide"><img src="images/b2.jpg"></div>
+            <div class="swiper-slide"><img src="images/b3.jpg"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <div class="search_box">
+        <input type="text" placeholder="搜索活动">
+    </div>
+</div>
+
+<div id="nav_box" class="whitebg">
+    <ul class="nav_list">
+        <li>
+            <img src="images/n1.png">
+            <span>亲子活动</span>
+        </li>
+        <li>
+            <img src="images/n2.png">
+            <span>演出展览</span>
+        </li>
+        <li>
+            <img src="images/n3.png">
+            <span>儿童乐园</span>
+        </li>
+        <li>
+            <img src="images/n4.png">
+            <span>亲子酒店</span>
+        </li>
+        <li>
+            <img src="images/n5.png">
+            <span>博物馆</span>
+        </li>
+        <li>
+            <img src="images/n6.png">
+            <span>科学</span>
+        </li>
+        <li>
+            <img src="images/n7.png">
+            <span>营地教育</span>
+        </li>
+        <li>
+            <img src="images/n8.png">
+            <span>周边游</span>
+        </li>
+        <li>
+            <img src="images/n9.png">
+            <span>国内游</span>
+        </li>
+        <li>
+            <img src="images/n10.png">
+            <span>境外游</span>
+        </li>
+    </ul>
+    <div class="nav_btn">
+        <a href="#" class="navbtn1">乐园一卡通</a>
+        <a href="#" class="navbtn2">附近活动</a>
+        <a href="#" class="navbtn3">活动日历</a>
+    </div>
+</div>
+
+<div id="hottopic" class="whitebg margintop1">
+    <div class="title"><span>热门主题</span></div>
+    <div class="topic_list_container">
+        <div class="topic_list">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="images/h1.jpg">
+                    <span>迪士尼特惠</span>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/h2.png">
+                    <span>冰雪欢乐主题</span>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/h3.jpg">
+                    <span>万达宝贝王</span>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/h4.jpg">
+                    <span>儿童剧推荐</span>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/h5.png">
+                    <span>小博物学家</span>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/h6.jpg">
+                    <span>寒假冬令营</span>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/h7.jpg">
+                    <span>自营冬令营</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="advertisement" class="whitebg margintop1">
+    <a href="#"><img src="images/adimg.jpg"></a>
+</div>
+
+<div id="age_box" class="whitebg margintop1">
+    <div class="title"><span>年龄分类</span></div>
+    <ul class="age_list">
+        <li>
+            <img src="images/age0_3.png">
+            <span>0~3岁</span>
+        </li>
+        <li>
+            <img src="images/age4_6.png">
+            <span>4~6岁</span>
+        </li>
+        <li>
+            <img src="images/age7_9.png">
+            <span>7~9岁</span>
+        </li>
+        <li>
+            <img src="images/age10_12.png">
+            <span>10~12岁</span>
+        </li>
+        <li>
+            <img src="images/age13.png">
+            <span>13岁以上</span>
+        </li>
+    </ul>
+</div>
+
+<div id="nearbyact" class="whitebg margintop1">
+    <div class="title"><span>附近活动推荐</span></div>
+    <div class="near_position">
+        <span class="position">定位失败...</span>
+        <i class="refresh"></i>
+    </div>
+    <ul class="nearbyact_list">
+        <li>
+            <div class="proimg">
+                <img src="images/proimg.jpg?imageView/2/w/344">
+                <p><i><img src="images/position.png"></i>220.7m</p>
+            </div>
+            <div class="proinfo">
+                <div class="proname textellipsis">产品名称产品名称产品名称产品名称产品名称产品名称</div>
+                <div class="price_tags">
+                    <span class="tag">持北京一卡通预约</span>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="proimg">
+                <img src="images/proimg.jpg?imageView/2/w/344">
+                <p><i><img src="images/position.png"></i>220.7m</p>
+            </div>
+            <div class="proinfo">
+                <div class="proname textellipsis">产品名称产品名称产品名称产品名称产品名称产品名称</div>
+                <div class="price_tags">
+                    <div class="price"><i>￥</i><strong>50</strong>起</div>
+                    <span class="tag">持北京一卡通预约</span>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="proimg">
+                <img src="images/proimg.jpg?imageView/2/w/344">
+                <p><i><img src="images/position.png"></i>220.7m</p>
+            </div>
+            <div class="proinfo">
+                <div class="proname textellipsis">产品名称产品名称产品名称产品名称产品名称产品名称</div>
+                <div class="price_tags">
+                    <div class="price"><i>￥</i><strong>50</strong>起</div>
+                    <span class="tag">持北京一卡通预约</span>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="proimg">
+                <img src="images/proimg.jpg?imageView/2/w/344">
+                <p><i><img src="images/position.png"></i>220.7m</p>
+            </div>
+            <div class="proinfo">
+                <div class="proname textellipsis">产品名称产品名称产品名称产品名称产品名称产品名称</div>
+                <div class="price_tags">
+                    <span class="tag">持北京一卡通预约</span>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <div class="nearbymore">
+        <a href="#">查看附近活动</a>
+    </div>
+</div>
+
+<div id="recommend" class="whitebg margintop1">
+    <div class="title"><span>为您推荐</span></div>
+    <ul class="recommend_list">
+        <li>
+            <div class="proimg">
+                <img src="images/proimg.jpg?imageView/2/w/640">
+                <div class="price_tag_tuan">
+                    <div class="tag_price">
+                        <i class="yen">￥</i>
+                        <i class="num">290</i>
+                        <i class="dw">起</i>
+                        <i class="dw oldprice">￥390</i>
+                    </div>
+                    <div class="tag_tag">持北京一卡通预约</div>
+                    <div class="tag_tuan">3人团</div>
+                </div>
+                <div class="joinnum">累计11人报名</div>
+            </div>
+            <div class="proinfo">
+                <div class="proname textellipsis">产品名称产品名称产品名称产品名称产品名称产品名称</div>
+                <div class="prosummarye textellipsis">产品简介产品简介产品简介产品简介产品简介产品简介产品简介产品简介</div>
+                <div class="price_tags">
+                    <span class="tag">儿童剧</span><span class="tag">北京市朝阳区</span><span class="tag">3-18岁</span>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="proimg">
+                <img src="images/proimg.jpg?imageView/2/w/640">
+                <div class="price_tag_tuan">
+                    <div class="tag_price">
+                        <i class="yen">￥</i>
+                        <i class="num">290</i>
+                        <i class="dw">起</i>
+                    </div>
+                    <div class="tag_tag">持北京一卡通预约</div>
+                </div>
+                <div class="joinnum">累计已售123份</div>
+            </div>
+            <div class="proinfo">
+                <div class="proname textellipsis">产品名称产品名称产品名称产品名称产品名称产品名称</div>
+                <div class="prosummarye textellipsis">产品简介产品简介产品简介产品简介产品简介产品简介产品简介产品简介</div>
+                <div class="price_tags">
+                    <span class="tag">儿童剧</span><span class="tag">北京市朝阳区</span><span class="tag">3-18岁</span>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="proimg">
+                <img src="images/proimg.jpg?imageView/2/w/640">
+                <div class="price_tag_tuan">
+                    <div class="tag_price">
+                        <i class="yen">￥</i>
+                        <i class="num">290</i>
+                        <i class="dw">起</i>
+                        <i class="dw oldprice">￥390</i>
+                    </div>
+                    <div class="tag_tuan">3人团</div>
+                </div>
+                <div class="joinnum">累计11人报名</div>
+            </div>
+            <div class="proinfo">
+                <div class="proname textellipsis">产品名称产品名称产品名称产品名称产品名称产品名称</div>
+                <div class="prosummarye textellipsis">产品简介产品简介产品简介产品简介产品简介产品简介产品简介产品简介</div>
+                <div class="price_tags">
+                    <span class="tag">儿童剧</span><span class="tag">北京市朝阳区</span><span class="tag">3-18岁</span>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+<script type="text/javascript">
+//    banner轮播
+    var swiper = new Swiper('.swiper-container', {
+        autoplay: {
+            delay: 3000
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            bulletClass : 'custom-bullet',
+            renderBullet: function (index, className) {
+                return '<span class="' + className + '"></span>';
+            }
+        },
+        loop : true
+    });
+
+//    热门主题
+    var hottopic = new Swiper('.topic_list', {
+        slidesPerView: 'auto',
+        freeMode: true
+    }); 
+</script>
+</body>
+</html>
